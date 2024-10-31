@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--! Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ! Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--! Bootstrap 5 CSS (RTL Support) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+
+    <!--! Css -->
+    <link rel="stylesheet" href="./Css/style.css" />
+    <!-- ! Swiper Css -->
+    <link rel="stylesheet" href="./Css/swiper.min.css" />
+    <link rel="stylesheet" href="./Css/swiper8.min.css" />
+    <!--! Website Title  -->
+    <title>سيد العود</title>
+  </head>
+  <body>
+    <!--! Mini Navbar -->
+    <nav class="bg-white p-2 px-5 d-none d-md-block">
+      <div class="container">
+        <div class="d-flex justify-content-between m-1">
+          <div>
+            <span>91100908 968+</span>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-chevron-down"></i>
+            <img
+              class="mt-1"
+              src="./imgs/3oman-flag.png"
+              width="30"
+              alt="علم عمان"
+            />
+            <span class="me-4">ر.ع</span>
+            <i class="fa-solid fa-chevron-down"></i>
+
+            <span class="ms-2">العربية</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--! Main Navbar -->
+    <nav class="main-nav d-none d-md-block">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!--! logo -->
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="logo" />
+          </div>
+          <!-- ! Search Bar -->
+          <div class="search-container">
+            <i
+              class="fa-solid fa-magnifying-glass text-white me-4 search-button"
+            ></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="البحث عن منتجات، والعلامات التجارية والأقسام"
+            />
+          </div>
+          <!-- ! icons -->
+          <div class="d-flex align-items-center gap-4 text-white">
+            <i class="fa-solid fa-user-large nav-icons"></i>
+
+            <i class="fa-solid fa-heart nav-icons nav-icons-number"></i>
+            <i class="fa-solid fa-cart-shopping nav-icons nav-icons-number"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ! Navbar Menu -->
+      <ul
+        class="d-flex justify-content-center pb-4 align-items-center navbar-menu"
+      >
+        <li>
+          <a href="#">الرئيسية</a>
+        </li>
+        <li>
+          <a href="#">عطور</a>
+          <i class="fa-solid fa-chevron-down text-white"></i>
+        </li>
+        <li>
+          <a href="#">بخور</a>
+        </li>
+        <li>
+          <a href="#">أدهان</a>
+        </li>
+        <li>
+          <a href="#">المرشات</a>
+        </li>
+        <li>
+          <a href="#">جميع منتجات</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ! Responsive Navbar -->
+    <nav class="resp-nav d-block d-md-none mt-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="border-0 bg-transparent">
+            <i class="fa-solid fa-bars fa-2x burger-icon"></i>
+          </button>
+
+          <div class="resp-logo">
+            <img src="./imgs/logo-resp.png" alt="logo" />
+          </div>
+
+          <div class="resp-icons d-flex gap-3">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping bag-num"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <!-- ! Toggle  Menu -->
+        <div class="toggle-menu position-fixed top-0 start-0 end-0 bottom-0">
+          <!-- ! Close btn -->
+          <button class="border-0 bg-transparent close-btn">
+            <i class="fa-solid fa-times"></i>
+          </button>
+          <!-- ! Language and Number -->
+          <div class="info-resp">
+            <div class="info-num d-block">
+              <span class="text-white">91100908 968+</span>
+              <i class="fa-solid fa-phone text-white"></i>
+            </div>
+            <div class="info-country d-block">
+              <img src="./imgs/3oman-flag.png" width="30" alt="علم عمان" />
+              <span class="me-4 text-white">ر.ع</span>
+              <button class="border-0 bg-transparent text-white">
+                العربية
+                <i class="fa-solid fa-chevron-down text-white"></i>
+              </button>
+            </div>
+          </div>
+          <!-- ! Menu -->
+          <div class="menu-items">
+            <a href="#"> الرئيسية</a>
+            <a href="#"
+              >عطور
+              <button class="bg-transparent border-0">
+                <i class="fa-solid fa-chevron-down text-white"></i>
+              </button>
+            </a>
+
+            <a href="#"> بخور</a>
+            <a href="#"> أدهان</a>
+            <a href="#"> المرشات</a>
+            <a href="#"> جميع منتجات</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ! Hero Section -->
+    <section class="hero-section hero text-white">
+      <div class="hero-slider">
+        <div class="slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="position-absolute hero-content">
+                  <p>عندما يلتقى العراقة بالجمال</p>
+                  <p>يولد دهن العود</p>
+                </div>
+                <button class="bg-transparent text-white border-white">
+                  <p>تسوق افضل مافى الوجود</p>
+                </button>
+                <img
+                  src="./imgs/hero-img.png"
+                  alt="hero-img"
+                  class="d-lg-block d-none img-cover"
+                />
+                <img
+                  src="./imgs/hero-img.png"
+                  alt="hero-img"
+                  class="d-lg-none d-block img-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="position-absolute hero-content">
+                  <p>عندما يلتقى العراقة بالجمال</p>
+                  <p>يولد دهن العود</p>
+                </div>
+                <button class="bg-transparent text-white border-white">
+                  <p>تسوق افضل مافى الوجود</p>
+                </button>
+                <img
+                  src="./imgs/hero-img.png"
+                  alt="hero-img"
+                  class="d-lg-block d-none img-cover"
+                />
+                <img
+                  src="./imgs/hero-img.png"
+                  alt="hero-img"
+                  class="d-lg-none d-block img-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Category Section -->
+
+    <section class="category-section">
+      <div class="container m-auto">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="category-item text-center">
+              <img src="./imgs/hero-img.png" alt="category-img" />
+              <h5>بخور</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="category-item text-center">
+              <img src="./imgs/hero-img.png" alt="category-img" />
+              <h5>عطور</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="category-item text-center">
+              <img src="./imgs/hero-img.png" alt="category-img" />
+              <h5>أدهان</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="category-item text-center">
+              <img src="./imgs/hero-img.png" alt="category-img" />
+              <h5>المرشات</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Best Seller Category Section -->
+
+    <section class="best-sellar-sec">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4">الأكثر مبيعاً</h2>
+          <a class="text-decoration-none text-secondary" href="#">إظهار الكل</a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <!-- Start of Product Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Daily offers -->
+    <section class="daily-offers-sec">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4">العروض اليوميه والاسبوعيه</h2>
+          <a class="text-decoration-none text-secondary" href="#">إظهار الكل</a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <!-- Start of Product Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <span class="discount">10%</span>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <div>
+                  <p class="text-black">
+                    500 ر.س
+                    <span class="text-decoration-line-through text-danger"
+                      >500 ر.س</span
+                    >
+                  </p>
+                </div>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-bag-shopping fa-lg me-4"></i>
+                  إضافة للسلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./imgs/best-seller-photo.png"
+                class="card-img-top"
+                alt="منتج"
+              />
+              <a class="text-decoration-none" href="#0">
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">مثال نص للمنتج عطر سيد العود</h5>
+                <!-- ! Star Rating (4/5) -->
+                <p class="text-warning mb-2">
+                  <i class="far fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p class="text-black">500 ر.س</p>
+
+                <button class="btn btn-outline-secondary bg-danger text-white">
+                  نفذت الكمية
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Banner Section -->
+    <section class="banner-sec">
+      <div class="container mt-5 text-white">
+        <!-- صورة البنر الكبيرة -->
+        <div class="row">
+          <div class="col-12 position-relative">
+            <img
+              src="./imgs/banner-main.png"
+              class="w-100"
+              alt="مجموعة العطور"
+            />
+            <div class="banner-text position-absolute">
+              <h2>احتفل بكل موسم مع مجموعات الهدايا الخاصة بنا</h2>
+            </div>
+            <button class="btn btn-shop-now mt-2 position-absolute">
+              تسوق الآن
+            </button>
+          </div>
+        </div>
+
+        <!-- قسم المنتجات -->
+        <div class="row mt-2">
+          <div class="col-md-6 col-6 mb-4">
+            <div class="card product-card">
+              <img src="./imgs/banner-2.png" class="product-img" alt="منتج 1" />
+              <button class="btn btn-discover">اكتشف المزيد</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-6 mb-4">
+            <div class="card product-card">
+              <img src="./imgs/banner-1.png" class="product-img" alt="منتج 2" />
+              <button class="btn btn-discover">اكتشف المزيد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Why Us Section -->
+    <section class="why-us-sec">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="mb-5">لماذا تختار منتجاتنا</h2>
+
+          <div class="col-md-4 col-12 mb-4 mx-auto">
+            <div class="card why-us-card shadow-sm">
+              <div class="card-body">
+                <img
+                  src="./imgs/why-us-free-run.png"
+                  alt="Icon 3"
+                  class="icon"
+                />
+                <h3>الشحن السريع</h3>
+                <p>خلال 1 إلى 3 أيام</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12 mb-4 mx-auto">
+            <div class="card why-us-card shadow-sm">
+              <div class="card-body">
+                <img
+                  src="./imgs/why-us-payment.png"
+                  alt="Icon 2"
+                  class="icon"
+                />
+                <h3>وسائل دفع متعددة</h3>
+                <p>قابلة للسداد، تحويل بنكي</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12 mb-4 mx-auto">
+            <div class="card why-us-card shadow-sm">
+              <div class="card-body">
+                <img src="./imgs/why-us-secure.png" alt="Icon 1" class="icon" />
+                <h3>اتمام الشراء</h3>
+                <p>انهاء الشراء ودفع امن</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Testimonials -->
+    <section class="testimonials-sec">
+      <div class="container my-5">
+        <h2 class="text-center mb-4">شهادات العملاء</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                أفضل خدمة تسوق إلكتروني قابلتها بحياتي! الصراحة الطلب يجي ثاني
+                يوم مغلف ومرتب ولا أروع
+              </p>
+              <p class="testimonial-author">- فاطمة -</p>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                خدمة سريعة وممتازة، و التغليف كان ممتاز. شكرا جزيلا!
+              </p>
+              <p class="testimonial-author">- علي -</p>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                خدمة رائعة وسرعة في التوصيل! أنصح الجميع بالتجربة.
+              </p>
+              <p class="testimonial-author">- نور -</p>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                خدمة رائعة وسرعة في التوصيل! أنصح الجميع بالتجربة.
+              </p>
+              <p class="testimonial-author">- نور -</p>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                خدمة رائعة وسرعة في التوصيل! أنصح الجميع بالتجربة.
+              </p>
+              <p class="testimonial-author">- نور -</p>
+            </div>
+          </div>
+
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section class="discount-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Discount Text -->
+          <div class="col-lg-6 text-center text-lg-end mb-4 mb-lg-0">
+            <h4 class="discount-text">احصل على خصم 35% على اول عملية شراء</h4>
+          </div>
+
+          <!-- Email Input and Button -->
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control text-start rounded-3"
+                placeholder="أدخل البريد الالكتروني للحصول على الخصم"
+                aria-label="Email"
+              />
+              <button class="btn btn-dark input-group-text" type="button">
+                احصل على خصم
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- ! Right Side Content -->
+        <div
+          class="d-flex flex-column justify-content-center align-items-start f-r-side"
+        >
+          <div>
+            <img src="./imgs/footer-logo.png" alt="" />
+          </div>
+          <div class="f-r-text">
+            <p>
+              عطورنا متجذرة بعمق فى التراث الغنى للروائح العربية التى تأسرك
+              بفخامتها فنحن نؤمن بأن كل رشة لعطور إرث تحمل بين ثناياها قصة تروى,
+              وتأخذك إلى تفاصيل الأناقة والجمال
+            </p>
+          </div>
+          <div class="f-r-social-icons">
+            <ul class="d-flex gap-4 justify-content-center align-items-center">
+              <i class="fa-brands fa-whatsapp"></i>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--! Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ! Swiper -->
+    <script src="./Js/swiper.min.js"></script>
+    <script src="./Js/swiper8-bundle.min.js"></script>
+    <!--! Custom JavaScript -->
+    <script src="./Js/script.js"></script>
+  </body>
+</html>
