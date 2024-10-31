@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Cairo', sans-serif;
+  overflow-x: hidden;
 }
 
 /* ! Main Nav */
