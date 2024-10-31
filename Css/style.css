@@ -676,12 +676,13 @@ body {
 
 .f-r-side p {
 color: white;
-width: 500px ;
+width: 100px ;
 text-align: center;
 display: inline-flex;
-margin-right: -100px;
+/* margin-right: -100px; */
 margin-top: 30px;
 margin-bottom: 30px;
+font-size: 10px;
 }
 
 .f-r-social-icons ul {
