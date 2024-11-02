@@ -44,17 +44,47 @@
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="d-flex align-items-center">
-            <i class="fa-solid fa-chevron-down"></i>
-            <img
-              class="mt-1"
-              src="./imgs/3oman-flag.png"
-              width="30"
-              alt="علم عمان"
-            />
-            <span class="me-2 me-md-4">ر.ع</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="currency-dropdown">
+              <span class="selected-currency">
+                <img src="./imgs/3oman-flag.png" width="30" alt="علم عمان" />
+                <span>ر.ع</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <div class="dropdown-content">
+                <div
+                  class="currency-option"
+                  data-currency="ر.س"
+                  data-img="./imgs/so3dia-flag.png"
+                >
+                  ر.س
+                </div>
+                <div
+                  class="currency-option"
+                  data-currency="ر.ع"
+                  data-img="./imgs/3oman-flag.png"
+                >
+                  ر.ع
+                </div>
+                <div
+                  class="currency-option"
+                  data-currency="د.ك"
+                  data-img="./imgs/kowit-flag.png"
+                >
+                  د.ك
+                </div>
+              </div>
+            </div>
 
-            <span class="ms-2">العربية</span>
+            <div class="dropdown ms-3" id="language-dropdown">
+              <span class="selected-language">
+                <span>العربية</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <div class="dropdown-content">
+                <div class="language-option" data-lang="العربية">العربية</div>
+                <div class="language-option" data-lang="English">English</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -81,10 +111,18 @@
           </div>
           <!-- ! icons -->
           <div class="d-flex align-items-center gap-4 text-white">
-            <i class="fa-solid fa-user-large nav-icons"></i>
+            <a href="#0">
+              <i class="fa-solid fa-user-large nav-icons"></i>
+            </a>
 
-            <i class="fa-solid fa-heart nav-icons nav-icons-number"></i>
-            <i class="fa-solid fa-cart-shopping nav-icons nav-icons-number"></i>
+            <a href="#0">
+              <i class="fa-solid fa-heart nav-icons nav-icons-number"></i>
+            </a>
+            <a href="#0">
+              <i
+                class="fa-solid fa-cart-shopping nav-icons nav-icons-number"
+              ></i>
+            </a>
           </div>
         </div>
       </div>
@@ -95,9 +133,26 @@
         <li>
           <a href="#">الرئيسية</a>
         </li>
-        <li>
-          <a href="#">عطور</a>
-          <i class="fa-solid fa-chevron-down text-white"></i>
+        <li class="desktop-perfume-dropdown-toggle">
+          <a href="#"
+            >عطور
+            <i
+              class="fa-solid fa-chevron-down text-white desktop-perfume-icon ms-1"
+            ></i>
+          </a>
+
+          <!-- ! Dropdown content -->
+          <div class="desktop-perfume-dropdown-content">
+            <div class="desktop-perfume-option" data-type="خشبية">
+              عطور خشبية
+            </div>
+            <div class="desktop-perfume-option" data-type="حمضية">
+              عطور حمضية
+            </div>
+            <div class="desktop-perfume-option" data-type="زهرية">
+              عطور زهرية
+            </div>
+          </div>
         </li>
         <li>
           <a href="#">بخور</a>
@@ -139,28 +194,85 @@
             <i class="fa-solid fa-times"></i>
           </button>
           <!-- ! Language and Number -->
-          <div class="info-resp">
-            <div class="info-num d-block">
-              <span class="text-white">91100908 968+</span>
-              <i class="fa-solid fa-phone text-white"></i>
+          <div
+            class="info-resp d-flex align-items-center justify-content-between"
+          >
+            <div class="info-num d-flex align-items-center text-white">
+              <span>91100908 968 + </span>
+              <i class="fa-solid fa-phone ms-2"></i>
             </div>
-            <div class="info-country d-block">
-              <img src="./imgs/3oman-flag.png" width="30" alt="علم عمان" />
-              <span class="me-2 me-md-4 text-white">ر.ع</span>
-              <button class="border-0 bg-transparent text-white">
-                العربية
-                <i class="fa-solid fa-chevron-down text-white"></i>
-              </button>
+            <div class="info-country d-flex align-items-center">
+              <div
+                class="resp-currency-dropdown me-3"
+                id="resp-currency-dropdown"
+              >
+                <span class="selected-resp-currency">
+                  <img src="./imgs/3oman-flag.png" width="30" alt="علم عمان" />
+                  <span>ر.ع</span>
+                  <i class="fa-solid fa-chevron-down ms-2"></i>
+                </span>
+                <div class="resp-dropdown-content">
+                  <div
+                    class="resp-currency-option"
+                    data-currency="ر.س"
+                    data-img="./imgs/so3dia-flag.png"
+                  >
+                    ر.س
+                  </div>
+                  <div
+                    class="resp-currency-option"
+                    data-currency="ر.ع"
+                    data-img="./imgs/3oman-flag.png"
+                  >
+                    ر.ع
+                  </div>
+                  <div
+                    class="resp-currency-option"
+                    data-currency="د.ك"
+                    data-img="./imgs/kowit-flag.png"
+                  >
+                    د.ك
+                  </div>
+                </div>
+              </div>
+              <div class="resp-language-dropdown" id="resp-language-dropdown">
+                <span class="selected-resp-language">
+                  <span>العربية</span>
+                  <i class="fa-solid fa-chevron-down ms-2"></i>
+                </span>
+                <div class="resp-dropdown-content">
+                  <div class="resp-language-option" data-lang="العربية">
+                    العربية
+                  </div>
+                  <div class="resp-language-option" data-lang="English">
+                    English
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <!-- ! Menu -->
           <div class="menu-items">
-            <a href="#"> الرئيسية</a>
-            <a href="#"
-              >عطور
-              <button class="bg-transparent border-0">
+            <a href="#" id="perfume-dropdown-toggle">
+              عطور
+              <button class="bg-transparent border-0" id="perfume-dropdown-btn">
                 <i class="fa-solid fa-chevron-down text-white"></i>
               </button>
+              <div
+                class="resp-dropdown-content perfume-dropdown"
+                id="perfume-dropdown-content"
+              >
+                <div class="resp-perfume-option" data-type="خشبية">
+                  عطور خشبية
+                </div>
+                <div class="resp-perfume-option" data-type="حمضية">
+                  عطور حمضية
+                </div>
+                <div class="resp-perfume-option" data-type="زهرية">
+                  عطور زهرية
+                </div>
+              </div>
             </a>
 
             <a href="#"> بخور</a>
@@ -633,7 +745,7 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary bg-danger text-white">
+                <button class="btn out-of-stock bg-danger text-white">
                   نفذت الكمية
                 </button>
               </div>
@@ -848,10 +960,14 @@
       <div class="container">
         <!-- ! Right Side Content -->
         <div
-          class="d-flex flex-column justify-content-center align-items-start  f-r-side"
+          class="d-flex flex-column justify-content-center align-items-start f-r-side"
         >
           <div>
-            <img src="./imgs/footer-logo.png" class="footer-logo" alt="footer-logo" />
+            <img
+              src="./imgs/footer-logo.png"
+              class="footer-logo"
+              alt="footer-logo"
+            />
           </div>
           <div class="f-r-text">
             <p>
@@ -861,7 +977,9 @@
             </p>
           </div>
           <div class="f-r-social-icons">
-            <ul class="d-flex w-50 mx-auto gap-4 justify-content-center align-items-center">
+            <ul
+              class="d-flex w-50 mx-auto gap-4 justify-content-center align-items-center"
+            >
               <li>
                 <i class="fa-brands fa-whatsapp"></i>
               </li>

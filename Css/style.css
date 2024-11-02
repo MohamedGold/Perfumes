@@ -1,6 +1,185 @@
+/* ! General Style */
+
 body {
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+.btn:hover {
+  background-color: #35031b;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn:focus {
+  /* outline: none !important; */
+  box-shadow: none !important;
+}
+
+/* ! Mini Nav DropDown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  padding: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dropdown-content {
+  display: none;
+}
+.dropdown-content.show {
+  display: block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+
+.selected-currency,
+.selected-language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.selected-currency img {
+  margin-top: 1px;
+}
+
+.currency-option,
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ! Mobile Nav Dropdowns */
+.resp-currency-dropdown,
+.resp-language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.resp-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.resp-dropdown-content.show {
+  display: block; /* Show the dropdown when 'show' class is added */
+  margin-right: -30px;
+}
+
+.resp-currency-option,
+.resp-language-option {
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  background-color: #620733;
+  text-align: right;
+}
+
+.resp-language-option {
+  padding-left: 40px !important;
+}
+
+.resp-currency-option:hover,
+.resp-language-option:hover {
+  background-color: #35031b; /* Darker background on hover */
+}
+
+.selected-resp-currency,
+.selected-resp-language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.selected-resp-currency img,
+.selected-resp-language img {
+  margin-right: 8px;
+}
+
+.info-country {
+  display: flex;
+  align-items: center;
+}
+
+.info-country img {
+  margin-right: 5px;
+}
+.info-resp .info-country {
+  text-align: left;
+  /* margin-left: 40px; */
+}
+
+.perfume-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.perfume-dropdown.show {
+  display: block;
+}
+
+.resp-perfume-option {
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  background-color: #620733;
+  text-align: right;
+}
+
+.resp-perfume-option:hover {
+  background-color: #35031b;
 }
 
 /* ! Main Nav */
@@ -169,6 +348,49 @@ body {
   }
 }
 
+/* ! Navbar Menu DropDown */
+
+.desktop-perfume-dropdown-toggle {
+  position: relative;
+}
+
+.desktop-perfume-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow-x: hidden;
+  top: 100%;
+  left: 0;
+}
+
+.show-desktop-dropdown {
+  display: block;
+  z-index: 99999 !important;
+  margin-left: -50px;
+}
+
+.desktop-perfume-option {
+  padding: 8px 12px;
+  color: #620733;
+  text-align: right;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.desktop-perfume-option:hover {
+  background-color: #35031b;
+  color: white;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
 /** =================================================================== */
 
 /* ! Responsive Main Navbar */
@@ -260,6 +482,7 @@ body {
   color: white;
   display: block;
   margin-bottom: 15px;
+  width: fit-content;
 }
 
 /* ! Info Resp Nav  */
@@ -372,6 +595,8 @@ body {
   }
 }
 
+/** =================================================================== */
+
 /* ! Category Section */
 .category-section {
   padding-top: 100px;
@@ -454,6 +679,8 @@ body {
   color: black;
 }
 
+/** =================================================================== */
+
 /* ! Daily Offers Section*/
 
 .daily-offers-sec {
@@ -487,6 +714,12 @@ body {
     padding: 5px !important;
   }
 }
+
+.out-of-stock {
+  cursor: inherit !important;
+}
+
+/** =================================================================== */
 
 /* ! Banner Section */
 
@@ -522,6 +755,11 @@ body {
   margin: auto;
   margin-top: -20px;
 }
+.btn-discover:hover {
+  background-color: #35031b;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
 
 .banner-text {
   position: absolute;
@@ -554,6 +792,8 @@ body {
   }
 }
 
+/** =================================================================== */
+
 /* ! Why Us Section */
 .why-us-sec {
   margin-bottom: 80px;
@@ -585,10 +825,12 @@ body {
   }
 }
 
+/** =================================================================== */
+
 /* ! Testimonials Section */
 
 .testimonials-sec {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .testimonials-sec h2 {
@@ -610,8 +852,18 @@ body {
   color: #f39c12;
   margin-bottom: 10px;
 }
+
+.carousel-inner .carousel-item {
+  min-height: 200px;
+}
+
 .carousel-indicators {
-  bottom: -50px;
+  bottom: -10px;
+}
+@media screen and (max-width: 768px) {
+  .carousel-indicators {
+    bottom: -40px;
+  }
 }
 .carousel-indicators button {
   width: 12px !important;
@@ -627,6 +879,8 @@ body {
   background-color: black !important;
   opacity: 1 !important;
 }
+
+/** =================================================================== */
 
 /* ! Discount Section */
 
@@ -683,6 +937,8 @@ body {
   z-index: 300;
 }
 
+/** =================================================================== */
+
 /* ! Footer */
 
 .footer {
@@ -718,7 +974,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; /* مسافة بين العناصر */
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -760,6 +1016,8 @@ li {
 .copyright {
   margin-bottom: 50px;
 }
+
+/* ! Responsive Footer */
 
 @media (max-width: 1100px) {
   .footer .container {
