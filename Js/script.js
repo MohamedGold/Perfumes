@@ -137,6 +137,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//! Toggler for responsive search bar
+const searchIcon = document.querySelector('.search-resp-icon');
+const searchContainer = document.querySelector('.resp-search-container');
+const searchInput = document.querySelector('.resp-search-input');
+
+//! Toggle search bar display on icon click
+searchIcon.addEventListener('click', (event) => {
+  searchContainer.classList.toggle('d-none');
+  // !Prevent event propagation to document click listener
+  event.stopPropagation();
+});
+
+//! Close search bar when clicking outside and clear input
+document.addEventListener('click', (event) => {
+  const isClickInsideSearch = searchContainer.contains(event.target);
+  const isClickOnSearchIcon = searchIcon.contains(event.target);
+
+  if (!isClickInsideSearch && !isClickOnSearchIcon && !searchContainer.classList.contains('d-none')) {
+    searchContainer.classList.add('d-none');
+    searchInput.value = ''; // Clear input when closing
+  }
+});
+
+
+
 // ! Main Nav Dropdown 
 
 document.addEventListener("DOMContentLoaded", function () {

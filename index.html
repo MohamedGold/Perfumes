@@ -36,7 +36,7 @@
   </head>
   <body>
     <!--! Mini Navbar -->
-    <nav class="bg-white p-2 px-5 d-none d-md-block">
+    <nav class="bg-white p-2 px-5 d-none d-md-block mini-nav">
       <div class="container">
         <div class="d-flex justify-content-between m-1">
           <div>
@@ -47,31 +47,34 @@
             <div class="dropdown" id="currency-dropdown">
               <span class="selected-currency">
                 <img src="./imgs/3oman-flag.png" width="30" alt="علم عمان" />
-                <span>ر.ع</span>
+                <span class="flag-name">ر.ع</span>
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
               <div class="dropdown-content">
-                <div
+                <a
+                  href="#0"
                   class="currency-option"
                   data-currency="ر.س"
                   data-img="./imgs/so3dia-flag.png"
                 >
                   ر.س
-                </div>
-                <div
+                </a>
+                <a
+                  href="#0"
                   class="currency-option"
                   data-currency="ر.ع"
                   data-img="./imgs/3oman-flag.png"
                 >
                   ر.ع
-                </div>
-                <div
+                </a>
+                <a
+                  href="#0"
                   class="currency-option"
                   data-currency="د.ك"
                   data-img="./imgs/kowit-flag.png"
                 >
                   د.ك
-                </div>
+                </a>
               </div>
             </div>
 
@@ -81,8 +84,12 @@
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
               <div class="dropdown-content">
-                <div class="language-option" data-lang="العربية">العربية</div>
-                <div class="language-option" data-lang="English">English</div>
+                <a href="#0" class="language-option" data-lang="العربية"
+                  >العربية</a
+                >
+                <a href="#0" class="language-option" data-lang="English"
+                  >English</a
+                >
               </div>
             </div>
           </div>
@@ -96,7 +103,9 @@
         <div class="d-flex align-items-center justify-content-between">
           <!--! logo -->
           <div class="logo">
-            <img src="./imgs/logo.png" alt="logo" />
+            <a href="#0">
+              <img src="./imgs/logo.png" alt="logo" />
+            </a>
           </div>
           <!-- ! Search Bar -->
           <div class="search-container">
@@ -143,15 +152,15 @@
 
           <!-- ! Dropdown content -->
           <div class="desktop-perfume-dropdown-content">
-            <div class="desktop-perfume-option" data-type="خشبية">
-              عطور خشبية
-            </div>
-            <div class="desktop-perfume-option" data-type="حمضية">
-              عطور حمضية
-            </div>
-            <div class="desktop-perfume-option" data-type="زهرية">
-              عطور زهرية
-            </div>
+            <a href="#0" class="desktop-perfume-option" data-type="خشبية"
+              >عطور خشبية</a
+            >
+            <a href="#0" class="desktop-perfume-option" data-type="حمضية"
+              >عطور حمضية</a
+            >
+            <a href="#0" class="desktop-perfume-option" data-type="زهرية"
+              >عطور زهرية</a
+            >
           </div>
         </li>
         <li>
@@ -182,10 +191,26 @@
           </div>
 
           <div class="resp-icons d-flex gap-3">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bag-shopping bag-num"></i>
-            <i class="fa-regular fa-heart"></i>
+            <!-- !Search icon -->
+            <i class="fa-solid fa-magnifying-glass search-resp-icon"></i>
+            <a href="#0">
+              <i class="fa-solid fa-bag-shopping bag-num"></i>
+            </a>
+            <a href="#0">
+              <i class="fa-regular fa-heart"></i>
+            </a>
           </div>
+        </div>
+        <!-- ! Responsive Search Bar -->
+        <div class="resp-search-container d-none">
+          <i
+            class="fa-solid fa-magnifying-glass text-white me-2 me-md-4 search-button"
+          ></i>
+          <input
+            type="text"
+            class="resp-search-input"
+            placeholder="ابحث هنا عن منتجات، العلامات التجارية، والأقسام"
+          />
         </div>
         <!-- ! Toggle  Menu -->
         <div class="toggle-menu position-fixed top-0 start-0 end-0 bottom-0">
@@ -211,28 +236,31 @@
                   <span>ر.ع</span>
                   <i class="fa-solid fa-chevron-down ms-2"></i>
                 </span>
-                <div class="resp-dropdown-content">
-                  <div
+                <div class="resp-dropdown-content resp-dropdown-curr">
+                  <a
+                    href="#0"
                     class="resp-currency-option"
                     data-currency="ر.س"
                     data-img="./imgs/so3dia-flag.png"
                   >
                     ر.س
-                  </div>
-                  <div
+                  </a>
+                  <a
+                    href="#0"
                     class="resp-currency-option"
                     data-currency="ر.ع"
                     data-img="./imgs/3oman-flag.png"
                   >
                     ر.ع
-                  </div>
-                  <div
+                  </a>
+                  <a
+                    href="#0"
                     class="resp-currency-option"
                     data-currency="د.ك"
                     data-img="./imgs/kowit-flag.png"
                   >
                     د.ك
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="resp-language-dropdown" id="resp-language-dropdown">
@@ -241,12 +269,12 @@
                   <i class="fa-solid fa-chevron-down ms-2"></i>
                 </span>
                 <div class="resp-dropdown-content">
-                  <div class="resp-language-option" data-lang="العربية">
+                  <a href="#0" class="resp-language-option" data-lang="العربية">
                     العربية
-                  </div>
-                  <div class="resp-language-option" data-lang="English">
+                  </a>
+                  <a href="#0" class="resp-language-option" data-lang="English">
                     English
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -254,31 +282,32 @@
 
           <!-- ! Menu -->
           <div class="menu-items">
-            <a href="#" id="perfume-dropdown-toggle">
+            <a href="#0" id="perfume-dropdown-toggle">
               عطور
               <button class="bg-transparent border-0" id="perfume-dropdown-btn">
                 <i class="fa-solid fa-chevron-down text-white"></i>
               </button>
+
               <div
                 class="resp-dropdown-content perfume-dropdown"
                 id="perfume-dropdown-content"
               >
-                <div class="resp-perfume-option" data-type="خشبية">
-                  عطور خشبية
-                </div>
-                <div class="resp-perfume-option" data-type="حمضية">
-                  عطور حمضية
-                </div>
-                <div class="resp-perfume-option" data-type="زهرية">
-                  عطور زهرية
-                </div>
+                <a href="#0" class="resp-perfume-option" data-type="خشبية"
+                  >عطور خشبية</a
+                >
+                <a href="#0" class="resp-perfume-option" data-type="حمضية"
+                  >عطور حمضية</a
+                >
+                <a href="#0" class="resp-perfume-option" data-type="زهرية"
+                  >عطور زهرية</a
+                >
               </div>
             </a>
 
-            <a href="#"> بخور</a>
-            <a href="#"> أدهان</a>
-            <a href="#"> المرشات</a>
-            <a href="#"> جميع منتجات</a>
+            <a href="#0"> بخور</a>
+            <a href="#0"> أدهان</a>
+            <a href="#0"> المرشات</a>
+            <a href="#0"> جميع منتجات</a>
           </div>
         </div>
       </div>
@@ -295,9 +324,14 @@
                   <p>عندما يلتقى العراقة بالجمال</p>
                   <p>يولد دهن العود</p>
                 </div>
-                <button class="bg-transparent text-white border-white">
-                  <p>تسوق افضل مافى الوجود</p>
-                </button>
+
+                <a
+                  class="bg-transparent hero-btn text-white border-white"
+                  href="#0"
+                >
+                  تسوق افضل مافى الوجود
+                </a>
+
                 <img
                   src="./imgs/hero-img.png"
                   alt="hero-img"
@@ -316,9 +350,12 @@
                   <p>عندما يلتقى العراقة بالجمال</p>
                   <p>يولد دهن العود</p>
                 </div>
-                <button class="bg-transparent text-white border-white">
-                  <p>تسوق افضل مافى الوجود</p>
-                </button>
+                <a
+                  class="bg-transparent hero-btn text-white border-white"
+                  href="#0"
+                >
+                  تسوق افضل مافى الوجود
+                </a>
                 <img
                   src="./imgs/hero-img.png"
                   alt="hero-img"
@@ -337,32 +374,39 @@
     </section>
 
     <!-- ! Category Section -->
-
     <section class="category-section">
       <div class="container m-auto">
         <div class="row justify-content-center">
           <div class="col-6 col-md-4 col-lg-3 mb-4">
             <div class="category-item text-center">
-              <img src="./imgs/hero-img.png" alt="category-img" />
-              <h5>بخور</h5>
+              <a href="#0">
+                <img src="./imgs/hero-img.png" alt="category-img" />
+                <h5>بخور</h5>
+              </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 mb-4">
             <div class="category-item text-center">
-              <img src="./imgs/hero-img.png" alt="category-img" />
-              <h5>عطور</h5>
+              <a href="#0">
+                <img src="./imgs/hero-img.png" alt="category-img" />
+                <h5>عطور</h5>
+              </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 mb-4">
             <div class="category-item text-center">
-              <img src="./imgs/hero-img.png" alt="category-img" />
-              <h5>أدهان</h5>
+              <a href="#0">
+                <img src="./imgs/hero-img.png" alt="category-img" />
+                <h5>أدهان</h5>
+              </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 mb-4">
             <div class="category-item text-center">
-              <img src="./imgs/hero-img.png" alt="category-img" />
-              <h5>المرشات</h5>
+              <a href="#0">
+                <img src="./imgs/hero-img.png" alt="category-img" />
+                <h5>المرشات</h5>
+              </a>
             </div>
           </div>
         </div>
@@ -370,7 +414,6 @@
     </section>
 
     <!-- ! Best Seller Category Section -->
-
     <section class="best-sellar-sec">
       <div class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -379,7 +422,7 @@
         </div>
 
         <div class="row row-cols-2 row-cols-md-4 g-4">
-          <!-- Start of Product Card -->
+          <!-- ! Start of Product Card -->
           <div class="col">
             <div class="card h-100">
               <img
@@ -402,10 +445,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -432,10 +475,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -461,10 +504,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -490,10 +533,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -519,10 +562,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -548,10 +591,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -577,10 +620,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -606,10 +649,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -649,10 +692,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -687,10 +730,10 @@
                   </p>
                 </div>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -716,10 +759,10 @@
                 </p>
                 <p class="text-black">500 ر.س</p>
 
-                <button class="btn btn-outline-secondary">
+                <a href="#0" class="btn btn-outline-secondary">
                   <i class="fa-solid fa-bag-shopping fa-lg me-2 me-md-4"></i>
                   إضافة للسلة
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -769,9 +812,9 @@
             <div class="banner-text position-absolute">
               <h2>احتفل بكل موسم مع مجموعات الهدايا الخاصة بنا</h2>
             </div>
-            <button class="btn btn-shop-now mt-2 position-absolute">
+            <a href="#0" class="btn btn-shop-now mt-2 position-absolute">
               تسوق الآن
-            </button>
+            </a>
           </div>
         </div>
 
@@ -780,13 +823,17 @@
           <div class="col-md-6 col-6 mb-4">
             <div class="card product-card">
               <img src="./imgs/banner-2.png" class="product-img" alt="منتج 1" />
-              <button class="btn btn-discover">اكتشف المزيد</button>
+              <a href="#0">
+                <button class="btn btn-discover">اكتشف المزيد</button>
+              </a>
             </div>
           </div>
           <div class="col-md-6 col-6 mb-4">
             <div class="card product-card">
               <img src="./imgs/banner-1.png" class="product-img" alt="منتج 2" />
-              <button class="btn btn-discover">اكتشف المزيد</button>
+              <a href="#0">
+                <button class="btn btn-discover">اكتشف المزيد</button>
+              </a>
             </div>
           </div>
         </div>
@@ -962,13 +1009,13 @@
         <div
           class="d-flex flex-column justify-content-center align-items-start f-r-side"
         >
-          <div>
+          <a href="#0">
             <img
               src="./imgs/footer-logo.png"
               class="footer-logo"
               alt="footer-logo"
             />
-          </div>
+          </a>
           <div class="f-r-text">
             <p>
               عطورنا متجذرة بعمق فى التراث الغنى للروائح العربية التى تأسرك
@@ -981,11 +1028,25 @@
               class="d-flex w-50 mx-auto gap-4 justify-content-center align-items-center"
             >
               <li>
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="#0">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
               </li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-facebook"></i></li>
+              <li>
+                <a href="#0">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -994,25 +1055,56 @@
           <div class="me-5">
             <h3 class="mb-4">اقسام المتجر</h3>
             <ul>
-              <li><span class="square-box"></span> دخول / تسجيل</li>
-              <li><span class="square-box"></span> عربة التسوق</li>
-              <li><span class="square-box"></span> القوائم المفضلة</li>
-              <li><span class="square-box"></span> حسابى</li>
-              <li><span class="square-box"></span> اتصل بنا</li>
-              <li><span class="square-box"></span> من نحن</li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> دخول / تسجيل </a>
+              </li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> عربة التسوق </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <span class="square-box"></span> القوائم المفضلة
+                </a>
+              </li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> حسابى </a>
+              </li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> اتصل بنا </a>
+              </li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> من نحن </a>
+              </li>
             </ul>
             <div class="payment-icon"></div>
           </div>
           <div>
             <h3 class="mb-4">خدمة العملاء</h3>
             <ul>
-              <li><span class="square-box"></span> الشحن والإرجاع</li>
-              <li><span class="square-box"></span> خريطة الموقع</li>
-              <li><span class="square-box"></span> الأسئلة الشائعة</li>
               <li>
-                <span class="square-box"></span> سياسة الإسترجاع والإستبدال
+                <a href="#0">
+                  <span class="square-box"></span> الشحن والإرجاع
+                </a>
               </li>
-              <li><span class="square-box"></span> الشروط والأحكام العامه</li>
+              <li>
+                <a href="#0"> <span class="square-box"></span> خريطة الموقع </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <span class="square-box"></span> الأسئلة الشائعة
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <span class="square-box"></span>
+                  سياسة الإسترجاع والإستبدال
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <span class="square-box"></span> الشروط والأحكام العامه
+                </a>
+              </li>
             </ul>
           </div>
         </div>
