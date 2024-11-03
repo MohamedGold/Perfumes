@@ -626,21 +626,26 @@ a:hover {
     width: 400px;
     margin-top: 10px;
   }
+ 
 }
 
 @media only screen and (max-width: 768px) {
   .hero-content {
     font-size: 30px;
     text-align: center;
-    top: 20%;
+    top: 35%;
     right: 50%;
     transform: translate(50%, -50%);
     width: 500px;
+    
+  }
+  .img-cover {
+    height: 500px !important;
   }
   .item a {
     font-size: 20px;
     width: 300px;
-    top: 40%;
+    top: 60%;
     right: 50%;
     transform: translate(50%, -50%);
     -webkit-transform: translate(50%, -50%);
@@ -648,6 +653,7 @@ a:hover {
     -ms-transform: translate(50%, -50%);
     -o-transform: translate(50%, -50%);
   }
+
 }
 
 /** =================================================================== */
